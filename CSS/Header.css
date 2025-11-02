@@ -1,0 +1,48 @@
+.main-header {
+    width: 100%;
+    background: linear-gradient(90deg, #0a2e73, #0066cc);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 100px; /* ✅ Increased height */
+    box-sizing: border-box;
+    color: white;
+}
+
+.main-header .logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.main-header nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.main-header nav a:hover {
+    text-decoration: underline;
+}
+
+/*  Yellow Login Button */
+.login-btn {
+    background-color: #ffcc00; /* Yellow */
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #e6b800;
+}
