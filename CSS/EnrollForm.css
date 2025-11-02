@@ -1,0 +1,80 @@
+.enroll-modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.enroll-content {
+    background: linear-gradient(135deg, #fff, #f8f9fa);
+    padding: 40px;
+    width: 500px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    animation: scaleIn 0.4s ease;
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.enroll-content h2 {
+    margin-bottom: 20px;
+    color: #0070f3;
+}
+
+.enroll-content input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.enroll-content input:focus {
+    border-color: #0070f3;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0,112,243,0.2);
+}
+
+.enroll-content button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    border: none;
+    background-color: #0070f3;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enroll-content button:hover {
+    background-color: #005bb5;
+}
+
+.close-btn {
+    background-color: #ff4d4d;
+    margin-left: 10px;
+}
+
+.thank-you {
+    text-align: center;
+}
+
+.thank-you h2 {
+    color: green;
+    margin-bottom: 10px;
+}
+ 
